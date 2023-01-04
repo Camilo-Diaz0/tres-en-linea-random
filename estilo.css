@@ -20,4 +20,10 @@ body{
     width: 8rem;
     border-radius: 1rem;
     margin: 1rem;
+    
+}
+.contenedor div img{
+    height: 8rem;
+    width: 8rem;
+    object-fit: fill;
 }

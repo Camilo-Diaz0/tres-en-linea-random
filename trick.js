@@ -1,6 +1,15 @@
 const posiciones = document.querySelectorAll(".items");
-posiciones.forEach(item => {
-    item.addEventListener("click", ()=>{
-        console.log("logrado")
-    })    
+let arr = [];
+for (const pos in posiciones) {
+    arr[pos] = posiciones[pos];
+}
+arr.forEach(elm => {
+    elm.addEventListener("click",function jugar(){
+        console.log("hola");
+        elm.innerHTML =`<img src="../imagenes/2circle.png">`;
+        arr.splice(elm,1);
+        elm.removeEventListener("click",jugar)
+        // ram();
+
+    })
 });
